@@ -4,6 +4,7 @@ import cors from "cors";
 import { sendEmail } from "./utils/sendEmail.js";
 
 const app = express();
+const port = process.env.PORT || 4000;
 const router = express.Router();
 
 config({ path: "./config.env" });

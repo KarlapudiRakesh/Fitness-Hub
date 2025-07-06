@@ -5,7 +5,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import WorkoutSessions from "./components/WorkoutSessions";
 import Gallery from "./components/Gallery";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
@@ -16,7 +15,6 @@ const App = () => {
     <Router>
       <Navbar/>
       <Hero/>
-      <WorkoutSessions/>
       <Gallery/>
       <Pricing/>
       <Contact/>
