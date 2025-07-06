@@ -1,9 +1,9 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,forwardRef } from "react";
 import { ClipLoader } from "react-spinners";
 import { toast } from "react-toastify";
 
-const Contact = () => {
+const Contact = (props, ref) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact">
+    <section ref={ref} className="contact">
       <form onSubmit={sendMail}>
         <h1>CONTACT US</h1>
         <div>
@@ -82,4 +82,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default forwardRef(Contact);

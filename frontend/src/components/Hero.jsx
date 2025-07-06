@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hero = () => {
+const Hero = ({ onJoinClick }) => {
   return (
     <section className='hero'>
        <div className="content">
@@ -14,8 +14,8 @@ const Hero = () => {
           <p>Unleash Your Potential</p>
          </div>
          <div className="buttons">
-          <button>Start Your Journey</button>
-          <button>Discover Your Plan</button>
+          <button onClick={onJoinClick}>Start Your Journey</button> 
+          <button onClick={onJoinClick}>Discover Your Plan</button>
          </div>
        </div>
     </section>

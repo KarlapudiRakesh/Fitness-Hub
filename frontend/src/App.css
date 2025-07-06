@@ -271,6 +271,30 @@ header p {
 .pricing .wrapper .card .description p svg {
   color: #0095ff;
 }
+
+.join-btn {
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  color: white;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
+  transition: all 0.3s ease;
+  width: fit-content;
+  align-self: start;
+}
+
+.join-btn:hover {
+  background: linear-gradient(135deg, #0077ff, #33ccff);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(30, 144, 255, 0.4);
+  cursor: pointer;
+}
+
+
 .pricing .wrapper .card .description a {
   background: transparent;
   color: #fff;

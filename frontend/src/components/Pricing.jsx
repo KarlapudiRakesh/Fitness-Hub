@@ -2,7 +2,7 @@ import { Check } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Pricing = () => {
+const Pricing = ({ onJoinClick }) => {
   const pricing =[
     {
       imgUrl: "/pricing.jpg",
@@ -54,7 +54,9 @@ const Pricing = () => {
                   <p>
                     <Check/> 20 days Freezing Option
                   </p>
-                  <Link to={"/"}>Join Now</Link>
+                   <button onClick={onJoinClick} className="join-btn">
+                      Join Now
+                   </button>
                 </div>
               </div>
             )
