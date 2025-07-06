@@ -2,7 +2,12 @@ import express from "express";
 import { config } from "dotenv";
 import cors from "cors";
 import { sendEmail } from "./utils/sendEmail.js";
+const cors = require("cors");
 
+app.use(cors({
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
+}));
 const app = express();
 const port = process.env.PORT || 4000;
 const router = express.Router();
