@@ -14,7 +14,7 @@ const Contact = (props, ref) => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/send/mail",
+        "https://fitness-hub-backend-erfp.onrender.com",
         {
           name,
           email,
