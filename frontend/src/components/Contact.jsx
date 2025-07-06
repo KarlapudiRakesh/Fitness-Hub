@@ -14,7 +14,7 @@ const Contact = (props, ref) => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "https://fitness-hub-backend-erfp.onrender.com",
+        "https://fitness-hub-backend1.onrender.com",
         {
           name,
           email,
